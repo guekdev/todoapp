@@ -1,0 +1,33 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guekdev/todoapp.git"
+  },
+  "author": "Gustav Eklund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guekdev/todoapp/issues"
+  },
+  "homepage": "https://github.com/guekdev/todoapp#readme"
+}
